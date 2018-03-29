@@ -33,21 +33,45 @@ a {
 body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
+    line-height: 1.3em;
+}
+
+h2 {
+    line-height: 1.5em;
+    font-size: 1.4em;
+}
+
+a {
+    font-size: .8em;
+    color: #aaa;
+}
+
+a:hover {
+    color: #800;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding: 30px;
+    grid-template-columns: 1fr 2fr;
     margin: 0 auto;
     max-width: 1500px;
+}
+
+.sidebar, .main {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 30px;
 }
 
 .link-block {
     border-radius: 5px;
     box-shadow: 1px 1px 3px #333;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
+}
+
+.link-block .body {
+    margin: 20px 0;
 }
 
 .link-block .footer li {
@@ -55,4 +79,30 @@ body {
     padding: 5px 10px;
     background-color: #eee;
     border-radius: 5px;
+    margin-right: 10px;
+    font-size: .8em;
+}
+
+.sidebar input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 100%;
+}
+
+.tag-group {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.tag-group span {
+    display: block;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.tag-group li {
+    margin-left: 40px;
 }

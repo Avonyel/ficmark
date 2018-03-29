@@ -10,10 +10,10 @@ class Main extends Component {
             <div className='grid'>
                 <div className='sidebar'>
                     <div>
-                        <label htmlFor='search'>
-                            <span>Search tags</span>
-                            <input type='text' />
-                        </label>
+                        <input name='searchbox' type='text' />
+                    </div>
+                    <div className='tag-group'>
+                        <span>Tag Group Name</span>
                     </div>
                     <div className='tag-group'>
                         <span>Tag Group Name</span>
@@ -27,23 +27,6 @@ class Main extends Component {
                     </div>
                     <div className='tag-group'>
                         <span>Tag Group Name</span>
-                        <ul>
-                            <li>Tag 1</li>
-                            <li>Tag 2</li>
-                            <li>Tag 3</li>
-                            <li>Tag 4</li>
-                            <li>Tag 5</li>
-                        </ul>
-                    </div>
-                    <div className='tag-group'>
-                        <span>Tag Group Name</span>
-                        <ul>
-                            <li>Tag 1</li>
-                            <li>Tag 2</li>
-                            <li>Tag 3</li>
-                            <li>Tag 4</li>
-                            <li>Tag 5</li>
-                        </ul>
                     </div>
                 </div>
                 <div className='main'>
@@ -52,7 +35,7 @@ class Main extends Component {
                             <h2>Title of Link</h2>
                             <a href=''>http://url.whatever.com/part-1</a>
                         </div>
-                        <div>
+                        <div className='body'>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -76,7 +59,7 @@ class Main extends Component {
                             <h2>Title of Link</h2>
                             <a href=''>http://url.whatever.com/part-1</a>
                         </div>
-                        <div>
+                        <div className='body'>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -100,7 +83,7 @@ class Main extends Component {
                             <h2>Title of Link</h2>
                             <a href=''>http://url.whatever.com/part-1</a>
                         </div>
-                        <div>
+                        <div className='body'>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
